@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Tennessee Williams</title>
     <style>
         body {
@@ -25,11 +26,13 @@
             margin-bottom: 30px;
         }
         .section-container {
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         .section {
-            padding: 20px;
-            margin: 10px;
+            margin: 20px 1%;
+            width: 48%;
         }
         .section h3 {
             color: #555;
@@ -43,14 +46,9 @@
         }
 
         @media only screen and (max-width: 769px) {
-            body {
-                background-color: lightblue;
-            }
-            h1 {
-                font-size: 5em;
-            }
-            h2 {
-                font-size: 3em;
+            .section {
+                margin: 20px 0;
+                width: 100%;
             }
         }
     </style>
